@@ -11,6 +11,15 @@
     height: 200vh;
 }
 
+.dropdown{
+    margin-right: 0;
+    z-index: 1;
+    position: relative;
+    left: 46%;
+}
+
+
+
 .radiall{
     height: 110vh;
     z-index: -1;
@@ -29,7 +38,8 @@
     background-position: top center;
     opacity: 0.9;
     height: 110vh;
-    
+    padding-top: 3.45%;
+
 }
 
 .innner{
