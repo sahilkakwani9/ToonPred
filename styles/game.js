@@ -52,7 +52,7 @@ $(".card").click(function(){
     var userchosenCharacter =  this.id;
     // user_clicked_pattern.push(userchosenColour);
     // userClickedPattern.push(userchosenColour);
-    playSound(userchosenCharacter);
+    
     // checkAnswer(user_clicked_pattern.length-1)
     // animatePress(userchosenCharacter);
     // print(userchosenCharacter);
@@ -62,6 +62,7 @@ $(".card").click(function(){
 $(".mod").click(function(){
     var userchosenCharacter = this.id;
     animatePress(userchosenCharacter);
+    playSound(userchosenCharacter);
 })
 
 $(document).keydown(function(){

@@ -34,6 +34,8 @@ body{
     position: relative;
     /* position: relative; */
     font-size: 1.8rem;
+    color: white;
+
 }
 
 .bgg{
@@ -69,6 +71,6 @@ body{
     z-index: 1;
     width: 32vw;
     left: 70%;
-    top: 10%;
+    top: 13%;
 }
 
