@@ -27,7 +27,9 @@ body{
 }
 
 .score{
+    margin-top: 0;
     padding-top: 40px;
+    right: 10%;
     text-align: right;
     position: relative;
     /* position: relative; */
@@ -48,8 +50,25 @@ body{
     position: absolute;
     font-size: 300%;
     color: white;
+    z-index: 10;
 }
 
 .pressed{
     background-color: green;
 }
+
+.howdy{
+    top: 11%;
+    left: -3%;
+    width: 32vw;
+    position: absolute;
+}
+
+.warden{
+    position: absolute;
+    z-index: 1;
+    width: 32vw;
+    left: 70%;
+    top: 10%;
+}
+

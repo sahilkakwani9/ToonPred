@@ -48,7 +48,7 @@ function animatePress(character){
     setTimeout(() => { $("#"+character).removeClass("pressed"); }, 1000);
 }
 
-$(".col-md-4").click(function(){
+$(".card").click(function(){
     var userchosenCharacter =  this.id;
     // user_clicked_pattern.push(userchosenColour);
     // userClickedPattern.push(userchosenColour);
@@ -64,10 +64,11 @@ $(".mod").click(function(){
     animatePress(userchosenCharacter);
 })
 
-// $(document).keydown(function(){
-//     // $("h1").text("Level "+level);
-//     if(FirstTimePressed){
-//         nextPattern();
-//     }
-//     FirstTimePressed = false;
-// })
+$(document).keydown(function(){
+    // $("h1").text("Level "+level);
+    if(FirstTimePressed){
+        nextPattern();
+    }
+    FirstTimePressed = false;
+})
+
