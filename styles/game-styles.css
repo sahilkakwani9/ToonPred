@@ -1,21 +1,29 @@
 body{
     margin: auto;
-    position: absolute;
+    position: relative;
     overflow: hidden;
+}
+
+.row {
+    display: flex;
+}
+.card {
+    width: 18vw;
+    margin-bottom: 2%;
 }
 
 .mod{
     width: 49%;
     object-fit: cover;
-    margin: 7px;
+    /* margin: 7px; */
     background-color: rgb(75, 141, 125);
     border-radius: 30px;
     padding: 15px;
 }
 
 .box{
-    margin-left: 20%;
-    margin-top: 9%;
+    margin-left: 25%;
+    /* margin-top: 9%; */
 }
 
 .score{
@@ -34,6 +42,12 @@ body{
     object-fit: cover;
     left: 0;
     /* overflow: hidden; */
+}
+
+.big-text {
+    position: absolute;
+    font-size: 300%;
+    color: white;
 }
 
 .pressed{
