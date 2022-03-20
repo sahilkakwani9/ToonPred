@@ -24,8 +24,9 @@ body{
 .box{
     margin-left: 25%;
     /* margin-top: 9%; */
-    display: none;
 }
+
+
 
 .score{
     margin-top: 0;
@@ -51,31 +52,38 @@ body{
 
 .count{
     position: absolute;
-    font-size: 30rem;
+    font-size: 3rem;
     color: black;
-    z-index: 1;
-    top: -29vh;
-    /* margin: auto; */
-    left: 40vw;
+    /* z-index: 1; */
+    /* top: -29vh; */
+    top: 0;
+    left:25vw;
+    margin: auto;
 }
 
-.pressed{
+.correct{
     background-color: green;
 }
 
+.incorrect{
+    background-color: red;
+}
+
 .howdy{
-    top: 11%;
-    left: -3%;
-    width: 32vw;
+    margin: auto;
+    top: 15vh;
+    left: -5vw;
+    width: 30vw;
     position: absolute;
+    /* display: none; */
 }
 
 .warden{
     position: absolute;
-    z-index: 1;
+    margin: auto;
     width: 32vw;
+    top: 15%;
     left: 70%;
-    top: 13%;
 }
 
 .count-done{
