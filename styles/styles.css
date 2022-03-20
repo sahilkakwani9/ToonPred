@@ -327,11 +327,13 @@ div{
   position: absolute;
   top: 80%;
   left: 50%;
+
 }
 
 .btn1{
   position: relative;
-  right: 15%;
+  right: 13vw;
+
 }
 
 .btn2{

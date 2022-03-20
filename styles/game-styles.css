@@ -24,6 +24,14 @@ body{
 .box{
     margin-left: 25%;
     /* margin-top: 9%; */
+<<<<<<< HEAD
+=======
+    /* display: none; */
+}
+
+.box-show{
+    display: block;
+>>>>>>> 07e8feb5bed763d0a8937b98fffef3b91def2ce5
 }
 
 
