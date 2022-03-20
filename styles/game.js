@@ -40,14 +40,7 @@ const checkAnswer = (level,character) => {
     // }
 }
 function startGame(){
-<<<<<<< HEAD
-   
-    // setTimeout(() => { $(".count").text("2"); }, 1000);
-    // setTimeout(() => { $(".count").text("1"); }, 2000);
-    // setTimeout(() => { nextCard() }, 3000);
-=======
->>>>>>> 07e8feb5bed763d0a8937b98fffef3b91def2ce5
-    
+
     
     // setTimeout(() => { $(".count").text("2"); }, 1000);
     // setTimeout(() => { $(".count").text("1"); }, 2000);
@@ -103,10 +96,4 @@ $(document).keydown(function(){
 
 
 
-<<<<<<< HEAD
-// nextCard();
-// startGame();
-=======
-startGame();
-$(window).load(nextCard());
->>>>>>> 07e8feb5bed763d0a8937b98fffef3b91def2ce5
+
