@@ -10,15 +10,28 @@ function playSound(character){
     cAudio.play();
 }
 
-// function nextPattern(){
-//     user_clicked_pattern = [];
-//     var randomNum = Math.floor(Math.random()*9);
-//     var randomCharacterChoice = characters[randomNum];
-//     game_pattern.push(randomCharacterChoice);
-//     var button = $("#"+randomCharacterChoice);
-//     button.fadeOut(100).fadeIn(100);
-//     playSound(randomCharacterChoice);
-// }
+function startGame(){
+   
+    setTimeout(() => { $(".count").text("2"); }, 1000);
+    setTimeout(() => { $(".count").text("1"); }, 2000);
+    setTimeout(() => { $(".count").addClass("count-done"); }, 3000);
+    setTimeout(() => { $(".box").style.display="block"; }, 4000);
+    
+}
+
+
+
+function nextCard(){
+    user_clicked_pattern = [];
+    var randomNum = Math.floor(Math.random()*9);
+    var randomCharacterChoice = characters[randomNum];
+    game_pattern.push(randomCharacterChoice);
+    var button = $("#"+randomCharacterChoice);
+    // button.fadeOut(100).fadeIn(100);
+    playSound(randomCharacterChoice);
+    animatePress(randomCharacterChoice);
+
+}
 
 // function checkAnswer(level){
 //     if(game_pattern[level] == user_clicked_pattern[level]){
@@ -65,11 +78,15 @@ $(".mod").click(function(){
     playSound(userchosenCharacter);
 })
 
-$(document).keydown(function(){
-    // $("h1").text("Level "+level);
-    if(FirstTimePressed){
-        nextPattern();
-    }
-    FirstTimePressed = false;
-})
+// Contdown
 
+// $(document).keydown(function(){
+//     // $("h1").text("Level "+level);
+//     if(FirstTimePressed){
+//         nextPattern();
+//     }
+//     FirstTimePressed = false;
+// })
+
+nextCard();
+startGame();
