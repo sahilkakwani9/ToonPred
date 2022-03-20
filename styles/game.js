@@ -15,7 +15,9 @@ function startGame(){
     setTimeout(() => { $(".count").text("2"); }, 1000);
     setTimeout(() => { $(".count").text("1"); }, 2000);
     setTimeout(() => { $(".count").addClass("count-done"); }, 3000);
-    setTimeout(() => { $(".box").style.display="block"; }, 4000);
+    setTimeout(() => { $(".box").addClass("box-show"); }, 3000);
+    setTimeout(() => { nextCard();}, 3000);
+    // nextCard();
     
 }
 
@@ -88,5 +90,4 @@ $(".mod").click(function(){
 //     FirstTimePressed = false;
 // })
 
-nextCard();
 startGame();
