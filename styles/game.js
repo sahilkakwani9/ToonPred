@@ -17,7 +17,6 @@ const checkAnswer = (level,character) => {
             setTimeout(function(){
                 nextCard();
             },1000);
-            console.log(game_pattern);
         }
         
     }

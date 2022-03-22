@@ -340,3 +340,37 @@ div{
   position: relative;
   right: 7%;
 }
+
+@media(max-width:800px){
+  .bggg{
+    width: 100vw;
+    height: 173vh;
+  }
+  .animation{
+    position: absolute;
+    text-align: center;
+    right: 70%;
+    top: 37%;
+  }
+
+  .layer:after {
+    font: 80px/0.65 Rammetto One, "Kaushan Script", Futura, "Roboto", "Trebuchet MS", Helvetica, sans-serif;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #purple-duck {
+    width: 80vw;
+    position: absolute;
+    left:40vw;
+  }
+
+  #bunny{
+    top: 20vh;
+    left: 0;
+    width: 50vw;
+    transform: rotate(20deg);
+  }
+}
