@@ -349,8 +349,8 @@ div{
   .animation{
     position: absolute;
     text-align: center;
-    right: 70%;
-    top: 37%;
+    right: 75%;
+    top: 5%;
   }
 
   .layer:after {
@@ -361,7 +361,7 @@ div{
     display: none;
   }
 
-  #purple-duck {
+  /* #purple-duck {
     width: 80vw;
     position: absolute;
     left:40vw;
@@ -372,5 +372,28 @@ div{
     left: 0;
     width: 50vw;
     transform: rotate(20deg);
+  } */
+
+  /* #gandu {
+    top: 35%;
+    left:0;
+    width: 90vw;
+  } */
+
+
+  #nobody {
+    width: 50vw;
+    top:30%;
+    left: 28%;
+  }
+
+  .p1{
+    top: 55%;
+    left: 110%;
+    color: orange;
+  }
+
+  .buttonss {
+    left: 20%;
   }
 }
