@@ -103,61 +103,6 @@ body{
     display: none;
 }
 
-
-@media(max-width:750px){
-body{
-    margin: 0;
-}
-
-    .bgg{
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-    }
-
-   
-    /* .card{
-        height:10vh;
-        object-fit: cover;
-    } */
-
-    .mod{
-        width: 20vw;
-        padding: 4%;
-        margin-right:  10%;
-    }
-
-    
-.howdy{
-    position: absolute;
-}
-
-.warden{
-    position: absolute;
-    width: 38vw;
-    top: 12.5vh;
-    left: 65vw;
-}
-
-.score{
-    position: relative;
-    right: 35vw;
-}
-
-.count{
-    position: absolute;
-    font-size: 1.7rem;
-    top: 70vh;
-    text-align:center;
-    right: 15vw;
-    }
-}
-
-
-
-
-
 .box-container{
     position: relative;
     display: flex;
@@ -183,24 +128,55 @@ body{
 .box>.card>img{
     width: 10vw;
     padding: 11px;
-
 }
-/* @media (max-width:450px) {
-        .box-container{
-            border: 1px solid red;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        }
 
-        .box{
-            height: 30vh;
+@media(max-width:750px){
+    body{
+        overflow: hidden;
+        max-height: 100vh;
+        margin: 0;
+    }
+    .bgg{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
 
-        }
-        .mod{
-            width: 79vw;
-        }
+    .box-container{
+        position: relative;
+        top: 30vh;
+        right: 40vw;
+    }
+    .box .card img{
+        width: 25vw;
+    }
 
-} */
+    
+    .howdy{
+        position: absolute;
+    }
+
+    .warden{
+        position: absolute;
+        width: 38vw;
+        top: 12.5vh;
+        left: 65vw;
+
+    }
+
+    .score{
+        position: relative;
+        right: 35vw;
+}
+    
+    .count{
+        position: absolute;
+        font-size: 1.7rem;
+        top: 90vh;
+        text-align:center;
+        right: 15vw;
+    }
+}
 
 
