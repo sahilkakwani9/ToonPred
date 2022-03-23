@@ -39,7 +39,6 @@ const checkAnswer = (level,character) => {
     // }
 }
 function startGame(){
-
     
     // setTimeout(() => { $(".count").text("2"); }, 1000);
     // setTimeout(() => { $(".count").text("1"); }, 2000);

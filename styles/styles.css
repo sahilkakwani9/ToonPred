@@ -333,12 +333,30 @@ div{
 .btn1{
   position: relative;
   right: 13vw;
-
 }
 
 .btn2{
   position: relative;
   right: 7%;
+  display:inline-block;
+}
+
+.HTP{
+  display: block;
+
+}
+
+.how{
+  display: none;
+  position: absolute;
+  background-color: red;
+  min-width: 10vw;
+  padding: auto;
+  
+}
+
+.btn2:hover .how{
+  display: block;
 }
 
 @media(max-width:800px){
@@ -395,5 +413,21 @@ div{
 
   .buttonss {
     left: 20%;
+  }
+}
+
+
+
+@media(max-width:700px){
+  .bggg{
+    width: 100%;
+    object-fit: cover;
+    height: 139%;
+    padding-top: 68%;
+  }
+
+  .animation{
+    position: absolute;
+right: 77%;
   }
 }
