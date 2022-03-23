@@ -72,6 +72,12 @@ body{
     top: 0;
     left:25vw;
     margin: auto;
+    font-family: "Bree Serif";
+    text-align: center;
+}
+
+.big-text{
+    text-align: center;
 }
 
 .correct{
@@ -97,7 +103,17 @@ body{
     width: 32vw;
     top: 15%;
     left: 70%;
+    /* animation-name: green-warden;
+    animation-duration:7000000s; */
 }
+
+/* @keyframes green-warden{
+    0%{top: 5%;}
+    25%{top: 0%;}
+    50%{top: 0%;}
+    75%{top: 0%;}
+    100%{top: -5%;}
+} */
 
 .count-done{
     display: none;
