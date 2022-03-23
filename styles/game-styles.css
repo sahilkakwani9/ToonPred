@@ -146,7 +146,7 @@ body{
     .box-container{
         position: relative;
         top: 30vh;
-        right: 40vw;
+        right: 38vw;
     }
     .box .card img{
         width: 25vw;
@@ -168,15 +168,19 @@ body{
     .score{
         position: relative;
         right: 35vw;
+        top: 5vh;
 }
-    
+
     .count{
         position: absolute;
         font-size: 1.7rem;
-        top: 90vh;
+        top: 20vh;
         text-align:center;
         right: 15vw;
+        width: 140px;
+        padding: auto;
     }
+    
 }
 
 
