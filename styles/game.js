@@ -25,7 +25,9 @@ const checkAnswer = (level,character) => {
         $("#"+character).addClass("incorrect");
         setTimeout(() => { $("#"+character).removeClass("incorrect"); }, 1000);
         $(".count").removeClass("count-done");
-        $(".count").text('GAME-OVER');
+        $(".count-ph").removeClass("count-done");
+        $(".count").text('GAME OVER');
+        $(".count-ph").text('GAME OVER');
 
 
     }
@@ -88,10 +90,18 @@ $(document).keydown(function(){
         nextCard();
     }
     $(".count").addClass("count-done");
+    $(".count-ph").addClass("count-done");
     FirstTimePressed = false;
 })
 
-
+$(document).addEventListener("touchend", function(){
+    if(FirstTimePressed){
+        nextCard();
+    }
+    $(".count").addClass("count-done");
+    $(".count-ph").addClass("count-done");
+    FirstTimePressed = false;
+});
 
 
 

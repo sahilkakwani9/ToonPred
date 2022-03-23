@@ -178,6 +178,7 @@ body{
         display: none;
     }
     .count-ph{
+        display: block;
         position: absolute;
         font-size: 1.4rem;
         top: 15vh;
