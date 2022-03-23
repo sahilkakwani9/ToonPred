@@ -97,6 +97,11 @@ p{
     box-sizing: border-box;
 }
 
+.p1{
+  position: relative;
+  top: 18%;
+}
+
   .model{
     width: auto;
     max-height: 40vh;
@@ -241,6 +246,10 @@ p{
   text-shadow: none;
 }
 
+
+.buttonss{
+  font-family: "Press Start 2P";
+}
 @keyframes ಠ_ಠ {
   100% {
     transform: rotateY(12deg) rotateX(-4deg);
@@ -322,17 +331,12 @@ div{
 		0 9px 7px #302314; 
 } */
 
-.buttonss{
-  display: flex;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-
-}
 
 .btn1{
-  position: relative;
-  right: 13vw;
+  position: absolute;
+  width: 30vw;
+  bottom: 10%;
+  right: 35%;
 }
 
 .btn2{
@@ -360,6 +364,10 @@ div{
 }
 
 @media(max-width:800px){
+  body{
+    min-height: 100vh;
+    overflow: hidden;
+  }
   .bggg{
     width: 100vw;
     height: 173vh;
@@ -400,20 +408,21 @@ div{
 
 
   #nobody {
-    width: 50%;
+    width: 150px;
     top:30%;
     left: 28%;
   }
 
   .p1{
-    top: 55%;
+    top: 50%;
     left: 105%;
     color: #3A3845;
   }
 
-  .buttonss {
-    left: 20%;
-    top: 80%;
+  .btn1 {
+    bottom: 25%;
+    width: 50vw;
+    left: 25%;
   }
 }
 

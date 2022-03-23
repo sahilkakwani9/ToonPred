@@ -114,6 +114,9 @@ body{
     right: 16vw;
     
 }
+.count-ph{
+    display: none;
+}
 .box{
     margin: 0;
     top: 9% !important;
@@ -133,7 +136,7 @@ body{
 @media(max-width:750px){
     body{
         overflow: hidden;
-        max-height: 100vh;
+        min-height: 100vh;
         margin: 0;
     }
     .bgg{
@@ -145,7 +148,7 @@ body{
 
     .box-container{
         position: relative;
-        top: 30vh;
+        top: 20vh;
         right: 38vw;
     }
     .box .card img{
@@ -155,12 +158,13 @@ body{
     
     .howdy{
         position: absolute;
+        top: 8vh;
     }
 
     .warden{
         position: absolute;
         width: 38vw;
-        top: 12.5vh;
+        top: 7vh;
         left: 65vw;
 
     }
@@ -168,17 +172,20 @@ body{
     .score{
         position: relative;
         right: 35vw;
-        top: 5vh;
-}
+    }
 
     .count{
+        display: none;
+    }
+    .count-ph{
         position: absolute;
-        font-size: 1.7rem;
-        top: 20vh;
+        font-size: 1.4rem;
+        top: 15vh;
         text-align:center;
-        right: 15vw;
-        width: 140px;
+        right: 43vw;
+        width:20vw;
         padding: auto;
+        font-family: "Press Start 2P";
     }
     
 }
