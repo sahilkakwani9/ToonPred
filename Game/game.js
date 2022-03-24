@@ -33,25 +33,9 @@ const checkAnswer = (level,character) => {
 
 
     }
-    // else{
-    //     playSound("sounds/wrong.mp3");
-    //     $("h1").text("Game Over, Press Any Key to Restart");
-    //     $("body").addClass("game-over");
-    //     setTimeout(() => { $("body").removeClass("game-over"); }, 2);
-    //     gameOver();
-
-    // }
-}
-function startGame(){
     
-    // setTimeout(() => { $(".count").text("2"); }, 1000);
-    // setTimeout(() => { $(".count").text("1"); }, 2000);
-    // setTimeout(() => { $(".count").addClass("count-done"); }, 3000);
-    // setTimeout(() => { $(".box").addClass("box-show"); }, 3000);
-    // setTimeout(() => { nextCard();}, 3000);
-    // nextCard();
-   
 }
+
 
 
 
@@ -73,7 +57,6 @@ function nextCard(){
     
     
     playSound(randomCharacterChoice);
-    // animatePress(randomCharacterChoice);
 
 }
 
@@ -99,12 +82,10 @@ $(".mod").click(function(){
     var userchosenCharacter = this.id;
     user_clicked_pattern.push(userchosenCharacter);
     animatePress(userchosenCharacter);
-    // playSound(userchosenCharacter);
     checkAnswer(user_clicked_pattern.length-1,userchosenCharacter);
 })
 
 $(document).keydown(function(){
-    // $("h1").text("Level "+level);
     if(FirstTimePressed){
         nextCard();
     }
@@ -112,7 +93,6 @@ $(document).keydown(function(){
 
     }
     $(".count").addClass("count-done");
-    // $(".count-ph").addClass("count-done");
     FirstTimePressed = false;
 })
 
@@ -127,14 +107,6 @@ $(".btn1").click(function(){
     FirstTimePressed = false;
 })
 
-// $(document).addEventListener("touchend", function(){
-//     if(FirstTimePressed){
-//         nextCard();
-//     }
-//     $(".count").addClass("count-done");
-//     $(".count-ph").addClass("count-done");
-//     FirstTimePressed = false;
-// });
 
 
 
