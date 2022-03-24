@@ -260,13 +260,13 @@ p{
 .animation{
     position: absolute;
     text-align: center;
-    right: 15%;
-    top: 37%;
+    right: 17%;
+    top: 32%;
 }
 
 .p1{
   position: absolute;
-  top: 31%;
+  top: 35%;
   left: 49%;
   font-family:Reggae One;
   text-decoration: solid;
@@ -296,6 +296,7 @@ button {
 
 button:hover {
 	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+  background-color: white;
 }
 
 button:focus {
@@ -374,9 +375,10 @@ div{
   }
   .animation{
     position: absolute;
-    text-align: center;
-    right: 75%;
-    top: 5%;
+    /* text-align: center; */
+    /* right: 75%; */
+    top: 50px;
+    margin-right: 10px;
   }
 
   .layer:after {
@@ -387,42 +389,22 @@ div{
     display: none;
   }
 
-  /* #purple-duck {
-    width: 80vw;
-    position: absolute;
-    left:40vw;
-  }
-
-  #bunny{
-    top: 20vh;
-    left: 0;
-    width: 50vw;
-    transform: rotate(20deg);
-  } */
-
-  /* #gandu {
-    top: 35%;
-    left:0;
-    width: 90vw;
-  } */
-
-
   #nobody {
-    width: 150px;
-    top:30%;
-    left: 28%;
+    width: 45%;
+    top: 300px;
+    left: 32%;
   }
 
   .p1{
-    top: 50%;
-    left: 105%;
+    margin-top: 230px;
+    left: 108%;
     color: #3A3845;
   }
 
   .btn1 {
-    bottom: 25%;
+    bottom: 50px;
     width: 50vw;
-    left: 25%;
+    left: 23%;
   }
 }
 

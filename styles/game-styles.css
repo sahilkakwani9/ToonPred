@@ -75,6 +75,14 @@ body{
     font-family: "Bree Serif";
     text-align: center;
 }
+.count-over {
+    top: 7vh;;
+    left: 30vw;
+    font-size: 2rem;
+}
+.over {
+    display: none;
+}
 
 .big-text{
     text-align: center;

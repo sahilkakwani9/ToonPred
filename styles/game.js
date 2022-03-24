@@ -26,8 +26,10 @@ const checkAnswer = (level,character) => {
         setTimeout(() => { $("#"+character).removeClass("incorrect"); }, 1000);
         $(".count").removeClass("count-done");
         $(".count-ph").removeClass("count-done");
-        $(".count").text('GAME OVER');
+        $(".count").text('GAME OVER, Press Any Key to Restart');
+        $(".count").addClass("count-over");
         $(".count-ph").text('GAME OVER');
+        gameOver()
 
 
     }
@@ -57,8 +59,18 @@ function nextCard(){
     user_clicked_pattern = [];
     var randomNum = Math.floor(Math.random()*9);
     var randomCharacterChoice = characters[randomNum];
+    console.log(randomCharacterChoice);
     game_pattern.push(randomCharacterChoice);
     var button = $("#"+randomCharacterChoice);
+    if(FirstTimePressed){
+        score = 0;
+        $(".score").text("SCORE: "+score);
+    }
+    else{
+        score += 100;
+        $(".score").text("SCORE: "+score);
+    }
+    
     
     playSound(randomCharacterChoice);
     // animatePress(randomCharacterChoice);
@@ -74,7 +86,10 @@ function animatePress(character){
     setTimeout(() => { $("#"+character).removeClass("correct"); }, 1000);
 }
 
-
+function gameOver(){
+    game_pattern = [];
+    FirstTimePressed = true;
+}
 
 $(".mod").click(function(){
     var userchosenCharacter = this.id;
@@ -88,6 +103,9 @@ $(document).keydown(function(){
     // $("h1").text("Level "+level);
     if(FirstTimePressed){
         nextCard();
+    }
+    else{
+
     }
     $(".count").addClass("count-done");
     $(".count-ph").addClass("count-done");
