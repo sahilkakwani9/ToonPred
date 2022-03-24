@@ -81,7 +81,9 @@ body{
     font-size: 2rem;
 }
 .over {
-    display: none;
+    position: absolute;
+    top:15%;
+    left: 30%;
 }
 
 .big-text{

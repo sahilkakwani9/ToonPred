@@ -89,6 +89,10 @@ function animatePress(character){
 function gameOver(){
     game_pattern = [];
     FirstTimePressed = true;
+    $(".over").text("Game Over");
+    setTimeout(() => {$(".over").text(""); },5000);
+    setTimeout(() => {$(".btn1").removeClass("count-done"); },5000);
+    
 }
 
 $(".mod").click(function(){
@@ -108,18 +112,29 @@ $(document).keydown(function(){
 
     }
     $(".count").addClass("count-done");
-    $(".count-ph").addClass("count-done");
+    // $(".count-ph").addClass("count-done");
     FirstTimePressed = false;
 })
 
-$(document).addEventListener("touchend", function(){
+$(".btn1").click(function(){
     if(FirstTimePressed){
         nextCard();
     }
-    $(".count").addClass("count-done");
-    $(".count-ph").addClass("count-done");
+    else{
+
+    }
+    $(".btn1").addClass("count-done");
     FirstTimePressed = false;
-});
+})
+
+// $(document).addEventListener("touchend", function(){
+//     if(FirstTimePressed){
+//         nextCard();
+//     }
+//     $(".count").addClass("count-done");
+//     $(".count-ph").addClass("count-done");
+//     FirstTimePressed = false;
+// });
 
 
 
