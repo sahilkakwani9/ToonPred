@@ -5,9 +5,10 @@
 }
 
 body{
-    margin: auto;
+    margin:0;
     position: relative;
     overflow: hidden;
+    max-width: 100vh;
 }
 
 /* .row {
@@ -110,9 +111,10 @@ body{
 .warden{
     position: absolute;
     margin: auto;
+    margin-right: 15vw;
     width: 32vw;
     top: 15%;
-    left: 70%;
+    /* left: 70%; */
     /* animation-name: green-warden;
     animation-duration:7000000s; */
 }
@@ -195,7 +197,7 @@ body{
         position: absolute;
         width: 38vw;
         top: 7vh;
-        left: 65vw;
+        left: 60vw;
 
     }
 
