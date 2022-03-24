@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: auto;
+.body{
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
 }
