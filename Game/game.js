@@ -90,8 +90,8 @@ function gameOver(){
     game_pattern = [];
     FirstTimePressed = true;
     $(".over").text("Game Over");
-    setTimeout(() => {$(".over").text(""); },5000);
-    setTimeout(() => {$(".btn1").removeClass("count-done"); },5000);
+    setTimeout(() => {$(".over").text(""); },3000);
+    setTimeout(() => {$(".btn1").removeClass("count-done"); },3000);
     
 }
 
